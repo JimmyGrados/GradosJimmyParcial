@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvGastosTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="173dp"
+        android:text="Gastos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etGastoFijo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/etGastoVariable"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingrese el gasto variable"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgastov" />
+
+    <EditText
+        android:id="@+id/etIngresoFijo"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingrese el ingreso fijo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvingreso" />
+
+    <EditText
+        android:id="@+id/etGastoFijo"
+        android:layout_width="286dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Ingrese el gasto fijo"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/tvgastov"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGastosTitle" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="190dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGastoVariable" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:text="Saldo:"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/tvingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Ingreso fijo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGastosTitle" />
+
+    <TextView
+        android:id="@+id/tvgasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Gasto fijo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIngresoFijo" />
+
+    <TextView
+        android:id="@+id/tvgastov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="336dp"
+        android:text="Gasto variable"
+        app:layout_constraintStart_toStartOf="@+id/etGastoVariable"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

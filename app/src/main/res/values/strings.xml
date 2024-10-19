@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GradosJimmyParcial</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Luis Chang</string>
+    <string name="nav_header_subtitle">luis.chang@toolkitapp.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Gastos</string>
+    <string name="menu_gallery">Tareas</string>
+    <string name="menu_slideshow">Equipos</string>
+    <string name="valtvlogin">Iniciar Sesión</string>
+    <string name="valtvinfo">Hola! Bienvenido a nuestra App</string>
+    <string name="valtvemail">Email</string>
+    <string name="valetemail">Enter Email</string>
+    <string name="valetpasword" />
+    <string name="valetpaswordd">Enter Pasword</string>
+    <string name="valbtlogin">Ingresar</string>
+    <string name="valtvpasword">Pasword</string>
+</resources>
